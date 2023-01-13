@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+
+  <main class="main">
+    
+    <section class="main__container">
+      <div class="main__cards">
+        <article class="main__frontcard">
+          <img src="images/bg-card-front.png" alt="" class="main__img">
+          <img src="images/card-logo.svg" alt="" class="main__logo">
+          <p class="main__cardnumber">0000 0000 0000 0000</p>
+
+          <div class="main__cardinfo">
+            <p class="main__cardname">Jane Appleseed</p>
+            <p class="main__carddate"><span class="main__cardmonth">00</span>/<span class="main__cardyear">00</span></p>
+          </div>
+
+        </article>
+
+        <article class="main__backcard">
+          <img src="images/bg-card-back.png" alt="" class="main__img">
+          <p class="main__cardcvc">000</p>
+        </article>
+
+      </div>
+
+      <form class="main__form">
+
+        <div class="main__formgroup">
+          <label for="cardholdername" class="main__label">Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="cardholdername" class="main__input" maxlength="30">
+          <p class="main__error"></p>
+        </div>
+
+        <div class="main__formgroup">
+          <label for="cardnumber" class="main__label">Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="cardnumber" class="main__input" maxlength="19">
+          <p class="main__error"></p>
+        </div>
+        
+        <div class="main__formgroup--2">
+          <label for="cardmonth" class="main__label">Exp. Date (MM/YY)</label>
+          <div class="main__formdate">
+            <input type="text" placeholder="MM" class="main__input" id="cardmonth" maxlength="2">
+            <input type="text" placeholder="YY" class="main__input" id="cardyear" maxlength="2">
+          </div>
+          <p class="main__error"></p>
+        </div>
+
+        <div class="main__formgroup--3">
+          <label for="cardcvc" class="main__label">CVC</label>
+          <input type="text" placeholder="e.g. 123" class="main__input" id="cardcvc" maxlength="3">
+          <p class="main__error"></p>
+        </div>
+
+        <input type="submit" value="Confirm" class="main__formbtn">
+
+      </form>
+    </section>
+
+  </main>
+  
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
